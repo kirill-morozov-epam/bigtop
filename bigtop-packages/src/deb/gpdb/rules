@@ -37,8 +37,8 @@ override_dh_auto_build:
 override_dh_auto_install:
 	bash -x debian/install_gpdb.sh
 	install -d -p -m 755 debian/gpdb/
-	cp -r --parents /usr/lib/gpdb debian/gpdb
-	rm -rf /usr/lib/gpdb
+	cp -r --parents /tmp/usr/lib/gpdb debian/gpdb
+	rm -rf /tmp/usr/lib/gpdb
 
 override_dh_auto_test:
 	@echo Tests are disabled

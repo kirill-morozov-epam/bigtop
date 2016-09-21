@@ -16,4 +16,4 @@
 
 set -ex
 
-make install
+make install DESTDIR=/tmp

@@ -53,8 +53,8 @@ bash %{SOURCE1}
 %__rm -rf $RPM_BUILD_ROOT
 bash %{SOURCE2}
 mkdir -p $RPM_BUILD_ROOT%{bin_gpdb}
-cp -f -r %{bin_gpdb}/* $RPM_BUILD_ROOT/%{bin_gpdb}
-%__rm -rf %{bin_gpdb}
+cp -f -r /tmp%{bin_gpdb}/* $RPM_BUILD_ROOT/%{bin_gpdb}
+%__rm -rf /tmp%{bin_gpdb}
 
 %files
 %defattr(-,root,root)
